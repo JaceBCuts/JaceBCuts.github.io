@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Serif Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TITLE</title>
 <style>
+    header {
+            background-color: #212121; /* New header background color */
+            color: #FFFFFF;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+        }
     body {
         background-color: #131313; /* Background color */
     }
 
     .topbutton {
         color: #FFFFFF; /* Corrected color value */
-        background-color: #131313;
+        background: transparent;
+        font-family: DM Serif Display;
         width: 100px;
         height: 40px;
-        border: 2px solid #131313;
+        border: 2px solid transparent;
         border-radius: 0; /* No rounded corners */
         font-size: 14px;
         cursor: pointer; /* Pointer cursor on hover */
@@ -24,7 +37,7 @@
     }
 
     .topbutton:hover {
-        background-color: #131313; /* Keep same background */
+        background: transparent; /* Keep same background */
         border-color: #E6AF2F; /* Change border to gold */
         color: #E6AF2F; /* Change text to gold */
     }
@@ -45,8 +58,9 @@
 
     h1 {
         color: #EFEFEF;
-        font-family: Arial;
+        font-family: DM Serif Display;
         text-align: left;
+        letter-spacing: 2px;
     }
 
     h2 {
@@ -68,7 +82,12 @@
 </style>
 </head>
 <body>
-<h1>Welcome</h1>
+    <header>
+        <button class="topbutton">About Me</button>
+        <button class="topbutton">Gallary</button>
+        <button class="topbutton">Contact</button>
+    </header>
+<h1>It's The Title</h1>
 <h2>This is my very terrible start to the website</h2>
 <button class="topbutton" onclick="showAlert()">About me</button>
 
