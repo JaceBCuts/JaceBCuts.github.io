@@ -1,8 +1,33 @@
-<title>TITLE</title>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TITLE</title>
 <style>
-    
+    body {
+        background-color: #131313; /* Background color */
+    }
+
+    .topbutton {
+        color: #FFFFFF; /* Corrected color value */
+        background-color: #131313;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #131313;
+        border-radius: 0; /* No rounded corners */
+        font-size: 14px;
+        cursor: pointer; /* Pointer cursor on hover */
+        outline: none;
+        padding: 0;
+        transition: all 0.1s ease; /* Smooth transition effect */
+    }
+
+    .topbutton:hover {
+        background-color: #131313; /* Keep same background */
+        border-color: #E6AF2F; /* Change border to gold */
+        color: #E6AF2F; /* Change text to gold */
+    }
 
     ul {
         margin: 0;
@@ -10,33 +35,47 @@
         font-family: Arial, Helvetica, sans-serif;
         align-content: left;
     }
+
     li {
-        color: #c5c6c7;
-        font-family: 'Arial';
+        color: #C5C6C7;
+        font-family: Arial;
         align-content: left;
         justify-content: left;
     }
+
     h1 {
-        color:#EFEFEF;
-        font-family: 'Arial';
+        color: #EFEFEF;
+        font-family: Arial;
         text-align: left;
     }
+
     h2 {
-        color:#CCCCCC;
-        font-family: 'Arial';
+        color: #CCCCCC;
+        font-family: Arial;
         text-align: left;
     }
+
     h4 {
         color: #CCCCCC;
         margin: 0;
-        font-family: 'Arial';
+        font-family: Arial;
     }
-    p {color: #CCCCCC;
-       font-family: Arial, Helvetica, sans-serif;
+
+    p {
+        color: #CCCCCC;
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 </head>
-<body bgcolor="#131313">
-    <h1>Welcome</h1>
-    <h2>This is my very terrible start to the website</h2>
-! this is a com
+<body>
+<h1>Welcome</h1>
+<h2>This is my very terrible start to the website</h2>
+<button class="topbutton" onclick="showAlert()">About me</button>
+
+<script>
+    function showAlert() {
+        alert("Button was clicked!");
+    }
+</script>
+</body>
+</html>
