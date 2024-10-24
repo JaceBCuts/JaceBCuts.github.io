@@ -39,19 +39,7 @@
         padding: 0;
         transition: all 0.1s ease;
     }
-    .topbuttonclicked{
-        color: #E6AF2F;
-        background: transparent;
-        font-family: DM Serif Display;
-        width: 7%;
-        height: 70px;
-        border: 2px solid #E6AF2F;
-        border-radius: 0;
-        font-size: 150%;
-        cursor: pointer;
-        outline: none;
-        padding: 0;
-    }
+
     .topbutton:hover {
         background: transparent; 
         border-color: #E6AF2F; 
@@ -108,32 +96,31 @@
             align-items: flex-start; /* Center items vertically */
             margin-top: 3%; /* Space above the content */
         }
+    .topbuttonclicked{
+        color: #E6AF2F;
+        background: transparent;
+        font-family: DM Serif Display;
+        width: 7%;
+        height: 70px;
+        border: 2px solid #E6AF2F;
+        border-radius: 0;
+        font-size: 150%;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+    }
 </style>
 </head>
 <body>
     <header>
-        <button class="topbuttonclicked">Home</button>
-        <button class="topbutton" onclick="galleryredirect()">Gallery</button>
+        <button class="topbutton" onclick="window.location.href='index.html'">Home</button> <!-- Redirect to specific page -->
+        <button class="topbuttonclicked">Gallery</button>
         <button class="topbutton">Contact</button>
     </header>
-<div class="content">
-    <img src="image.jpg" width="30%"; height="50%">
-    <div>
-        <h1>It's The Title</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </h2>
-    </div>
-</div>
-<script>
-    // Function to show an alert
-    function showAlert() {
-        alert("Button was clicked!");
-    }
+<h1>HIIII</h1>
 
-    // Function to navigate to a new page (replace 'products.html' with your desired path)
-    function galleryredirect() {
-        window.location.href = '/gallery/index.html'; // Change this path as needed
-    }
+<script>
+function homeredirect() {
+    window.location.href = '/jacebcuts.github.io/index.html';
 </script>
-</body>
-</html>
+}
