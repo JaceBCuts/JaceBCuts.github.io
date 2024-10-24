@@ -114,7 +114,7 @@
     <header>
         <button class="topbuttonclicked">Home</button>
         <button class="topbutton" onclick="galleryredirect()">Gallery</button>
-        <button class="topbutton">Contact</button>
+        <button class="topbutton" onclick="contactredirect()">Contact</button>
     </header>
 <div class="content">
     <img src="image.jpg" width="30%"; height="50%">
@@ -133,6 +133,9 @@
     // Function to navigate to a new page (replace 'products.html' with your desired path)
     function galleryredirect() {
         window.location.href = '/gallery/index.html'; // Change this path as needed
+    }
+    function contactredirect(){
+        window.location.href = '/contact/index.html';
     }
 </script>
 </body>
